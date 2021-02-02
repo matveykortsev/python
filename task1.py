@@ -1,11 +1,3 @@
-number = 1
-string = 'Hello world'
-
-print('Заданное число', number)
-print('Заданная строка', string)
-
-number = int(input('Введите новое число '))
-string = input('Введите новую строку ')
-
-print(number)
-print (string)
+new_list = ['Bob', 45, 83.4, True, False, [2], { 'month': 'may'}]
+for element in new_list:
+    print(element, type(element))

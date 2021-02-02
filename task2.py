@@ -1,8 +1,10 @@
-number_to_convert = int(input('Введите время в секундах '))
+my_list = list(input('Type something '))
 
-hours = number_to_convert // 3600
-delta = number_to_convert % 3600
-minutes = delta // 60
-seconds = delta % 60
+for i in range(1, len(my_list), 2):
+    my_list[i-1], my_list[i] = my_list[i], my_list[i-1]
+print(my_list)
 
-print('{0}:{1}:{2}' .format(hours, minutes, seconds))
+
+
+
+
